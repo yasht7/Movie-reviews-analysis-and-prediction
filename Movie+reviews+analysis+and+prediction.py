@@ -34,14 +34,14 @@ from sklearn.decomposition import PCA
 warnings.simplefilter('ignore')
 
 
-# ---
+
 # 
 # ## Part 1: Descriptive analysis
 # 
 # Before beginning the "real" work, let's dig into the data a bit do see how the data is present. Loading the datasets and 
 # dropping rows that have missing data:
 
-# In[2]:
+
 
 reviews = pd.read_csv('reviews.csv', parse_dates = ['review_date']).dropna()
 movies = pd.read_csv("movies.dat", delimiter='\t').dropna()
@@ -83,7 +83,6 @@ reviews.dtypes
 
 # In[3]:
 
-# enter your code below
 print("Number of Unique reviews: ", reviews.quote.nunique())
 print("Number of Unique reviewers: ", reviews.critic.nunique())
 print("Number of Unique movies(reviews data set): ", reviews.title.nunique())
